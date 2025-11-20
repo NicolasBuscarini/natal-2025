@@ -2,94 +2,189 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>Lista de Presentes</title>
+  <title>Lista de Presentes - Amigo Secreto Nícolas 2025</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  >
+
   <style>
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 20px;
-      background: #f5f7fa;
+      background: linear-gradient(135deg, #f5f7fa, #e3f2fd);
+      min-height: 100vh;
+      padding-top: 40px;
+      padding-bottom: 40px;
     }
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
+
+    .card-presentes {
+      border-radius: 1rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background: #ffffff;
+
+    .badge-natal {
+      background: #c62828;
     }
-    th, td {
-      padding: 8px 10px;
-      border: 1px solid #ccc;
+
+    .table thead th {
+      background: #e3f2fd;
     }
-    th {
-      background: #e1f0ff;
-      text-align: left;
+
+    .table-hover tbody tr:hover {
+      background-color: #f1f8ff;
     }
-    td.valor {
-      text-align: right;
+
+    .valor {
       white-space: nowrap;
     }
-    tr:nth-child(even) {
-      background: #f9fbff;
+
+    .aviso-camisa {
+      border-left: 4px solid #dc3545;
+    }
+
+    footer {
+      font-size: 0.85rem;
+      color: #6c757d;
     }
   </style>
 </head>
 <body>
-  <h1>Lista de Presentes</h1>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
 
-  <table>
-    <thead>
-      <tr>
-        <th>Item</th>
-        <th>Descrição / Link</th>
-        <th>Valor aproximado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>kit 4 camisetas PoloWear</td>
-        <td>
-          <a href="https://www.amazon.com.br/Kit-Camisetas-Masculinas-Premium-Sortido/dp/B0C38X68U4"
-             target="_blank" rel="noopener noreferrer">
-            Kit 4 Camisetas Masculinas Premium Polo Wear Sortido | Frete grátis
-          </a>
-        </td>
-        <td class="valor">R$ 150,00</td>
-      </tr>
-      <tr>
-        <td>lista de boardgames</td>
-        <td>
-          <a href="https://www.comparajogos.com.br/perfil/Nicolas_Buscarini/desejos"
-             target="_blank" rel="noopener noreferrer">
-            Lista desejos de Nicolas_Buscarini | Compara Jogos
-          </a>
-        </td>
-        <td class="valor">~R$ 50,00 – R$ 250,00</td>
-      </tr>
-      <tr>
-        <td>fone de ouvido</td>
-        <td>
-          <a href="https://www.kabum.com.br/produto/85179/fone-de-ouvido-intra-auricular-jbl-tune-110-preto-jblt110blk"
-             target="_blank" rel="noopener noreferrer">
-            Fone de Ouvido Intraauricular JBL Tune 110 | KaBuM
-          </a>
-        </td>
-        <td class="valor">R$ 69,00</td>
-      </tr>
-      <tr>
-        <td>smartplug positivo</td>
-        <td>
-          <a href="https://www.amazon.com.br/Smart-Plug-Wi-Fi-Positivo-Inteligente/dp/B07S14JHF2"
-             target="_blank" rel="noopener noreferrer">
-            Smart Plug Wi-Fi 10A/1000W, Positivo Casa Inteligente, Ligue ou Desligue seus
-            Eletrodomésticos Através do Celular, Compatível com Alexa | Amazon.com.br
-          </a>
-        </td>
-        <td class="valor">R$ 44,99</td>
-      </tr>
-    </tbody>
-  </table>
+        <div class="text-center mb-4">
+          <h1 class="fw-bold">
+            🎄 Amigo Secreto de Natal 2025
+          </h1>
+          <p class="lead mb-1">
+            Lista de presentes do <strong>Nícolas</strong>
+          </p>
+          <span class="badge badge-natal text-light mt-2">
+            Natal 2025 • Amigo Secreto
+          </span>
+        </div>
+
+        <div class="card card-presentes">
+          <div class="card-body">
+            <p class="mb-3">
+              Olá! 👋<br>
+              Esta é a lista de sugestões de presentes do <strong>Nícolas</strong> para o
+              <strong>amigo secreto de Natal 2025</strong>. Fique à vontade para escolher o item
+              que achar mais legal — os valores são apenas uma referência.
+            </p>
+
+            <!-- Aviso importante sobre o tamanho da camiseta -->
+            <div class="alert alert-light aviso-camisa py-2 mb-4">
+              <strong class="text-danger">Observação importante:</strong>
+              <span class="text-danger">
+                A coleta de valores foi feita em <strong>20/11/2025</strong> então os preços podem sofrer alterações.
+              </span>
+            </div>
+
+            <div class="table-responsive">
+              <table class="table table-hover align-middle mb-0">
+                <thead>
+                  <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col">Descrição / Link</th>
+                    <th scope="col" class="text-end">Valor aproximado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Kit 4 camisetas PoloWear</td>
+                    <td>
+                      <a href="https://produto.mercadolivre.com.br/MLB-4099033385-kit-4-camisetas-masculinas-premium-polo-wear-sortido-_JM?searchVariation=188483766015#polycard_client=recommendations_vip-v2p&reco_backend=ranker_retrieval_online_vpp_v2p_rh&reco_model=coldstart_low_exposition&reco_client=vip-v2p&reco_item_pos=1&reco_backend_type=low_level&reco_id=896545f7-70a0-4cf1-b91c-c5f1859f5b4c"
+                         target="_blank" rel="noopener noreferrer">
+                        Kit 4 Camisetas Masculinas Premium Polo Wear Sortido (frete grátis)
+                      </a>
+                      <div class="small text-danger mt-1">
+                        Lembrar: escolher tamanho <strong>G</strong>.
+                      </div>
+                    </td>
+                    <td class="text-end valor">R$ 150,00</td>
+                  </tr>
+                  <tr>
+                    <td>Kit 5 camisetas Oversized</td>
+                    <td>
+                      <a href="https://shopee.com.br/product/626842970/20197315825?d_id=bf9b7&uls_trackid=5482fe2v0076&utm_content=3b6o5nkaiNsYmNTVDC71bedDDUbZ"
+                         target="_blank" rel="noopener noreferrer">
+                         Kit 5 camisetas Oversized (shoppe frete grátis)
+                      </a>
+                      <div class="small text-danger mt-1">
+                        Lembrar: escolher tamanho <strong>M</strong>.
+                      </div>
+                    </td>
+                    <td class="text-end valor">R$ 165,00</td>
+                  </tr>
+                  <tr>
+                    <td>Lista de boardgames</td>
+                    <td>
+                      <a href="https://www.comparajogos.com.br/u/Nicolas_Buscarini/list/desejos"
+                         target="_blank" rel="noopener noreferrer">
+                        Lista de desejos do Nícolas no Compara Jogos
+                      </a>
+                      <div class="small text-muted">
+                        Qualquer jogo dessa lista é bem-vindo 🙂
+                      </div>
+                    </td>
+                    <td class="text-end valor">~R$ 50,00 – R$ 250,00</td>
+                  </tr>
+                  <tr>
+                    <td>Fone de ouvido</td>
+                    <td>
+                      <a href="https://www.kabum.com.br/produto/119239/fone-de-ouvido-intra-auricular-jbl-tune-110-com-fio-microfone-conector-3-5mm-preto-jblt110blk"
+                         target="_blank" rel="noopener noreferrer">
+                        Fone de Ouvido Intraauricular JBL Tune 110 (KaBuM)
+                      </a>
+                    </td>
+                    <td class="text-end valor">R$ 65,00 + frete</td>
+                  </tr>
+                  <tr>
+                    <td>Smart Plug Positivo</td>
+                    <td>
+                      <a href="https://www.amazon.com.br/Positivo-Casa-Inteligente-eletrodom%C3%A9sticos-Compat%C3%ADvel/dp/B07S14JHF2?adgrpid=1140194216729299&dib=eyJ2IjoiMSJ9.kqjYWd0psiTMnzorNkVxs-WVrb5ljqcZ7J2R_8up3hx4ZuuI3o_KTL2WfBuetEtkojDwGAadsD6kV8P91HJ--kd7Welc0T0KeES7SEgNFH8X_uGDoncArTsSMSXYcEiexQ9TtDjXcouTbgTMeVeVJ_2grflcX9dxIFvmZ0cByPMfla269u0yqmp3sKOcfu8ctwix5_kOue_Fn-PEHTFTTXaafuJ0I_JOf_3SsdmZhX-P62clolsfoQkiwleoZMb-WiL5HV8LpihFR1l-GbWWPs0q-QvFW_cFFFexVfIcDhY.zkDP-a8Szp9s4qtCEpRIwQZVA_bAKuFffmVxIclOtdc&dib_tag=se&hvadid=71262304253063&hvbmt=be&hvdev=c&hvlocphy=116068&hvnetw=o&hvqmt=e&hvtargid=kwd-71262654604352%3Aloc-20&hydadcr=5629_13210324&keywords=smart%2Bplug%2Bpositivo&mcid=0cf625819ebf3c58881f88d470bcaf2d&qid=1763637268&sr=8-5&th=1"
+                         target="_blank" rel="noopener noreferrer">
+                        Smart Plug Wi-Fi 10A/1000W Positivo Casa Inteligente
+                      </a>
+                      <div class="small text-muted">
+                        Para ligar/desligar eletrodomésticos pelo celular (compatível com Alexa)
+                      </div>
+                    </td>
+                    <td class="text-end valor">R$ 44,99 (amazon frete grátis)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+          <div class="card-footer text-center">
+            <small class="text-muted">
+              🎁✨
+            </small>
+          </div>
+        </div>
+
+        <footer class="text-center mt-4">
+          <p>
+            Página criada para o amigo secreto de Natal 2025 de <strong>Nícolas</strong>.
+          </p>
+        </footer>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (opcional, só se precisar de componentes JS do Bootstrap) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
 </body>
 </html>
