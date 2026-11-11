@@ -1,309 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Lista de Presentes - Amigo Secreto Nícolas 2025</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#173b32" />
+  <title>Lista de Presentes - Amigo Secreto Nícolas 2026</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    :root {
+      --natal-verde: #173b32;
+      --natal-vermelho: #b8323c;
+      --fundo: #f4f7f4;
+    }
 
-    <!-- Bootstrap 5 CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+    body {
+      min-height: 100vh;
+      padding: 40px 0;
+      background: radial-gradient(circle at top left, #e5f0e9, transparent 45%), var(--fundo);
+      color: #26332d;
+    }
 
-    <style>
-      body {
-        background: linear-gradient(135deg, #f5f7fa, #e3f2fd);
-        min-height: 100vh;
-        padding-top: 40px;
-        padding-bottom: 40px;
-      }
+    .page-header { color: var(--natal-verde); }
+    .year-badge { background: var(--natal-vermelho); }
+    .gift-card {
+      overflow: hidden;
+      height: 100%;
+      border: 0;
+      border-radius: 1rem;
+      box-shadow: 0 10px 28px rgba(24, 54, 43, .09);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .gift-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 32px rgba(24, 54, 43, .14);
+    }
+    .product-image-wrap {
+      display: grid;
+      place-items: center;
+      min-height: 230px;
+      padding: 1rem;
+      background: #fff;
+    }
+    .product-image {
+      width: 100%;
+      height: 210px;
+      object-fit: contain;
+    }
+    .product-description { color: #66736c; }
+    .btn-store {
+      background: var(--natal-verde);
+      border-color: var(--natal-verde);
+      color: #fff;
+    }
+    .btn-store:hover {
+      background: #245747;
+      border-color: #245747;
+      color: #fff;
+    }
+    footer { color: #77827c; font-size: .875rem; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="text-center page-header mb-5">
+      <div class="fs-1 mb-2" aria-hidden="true">🎄</div>
+      <h1 class="fw-bold">Amigo Secreto de Natal 2026</h1>
+      <p class="lead mb-2">Lista de presentes do <strong>Nícolas</strong></p>
+      <span class="badge year-badge text-white rounded-pill px-3 py-2">
+        Natal 2026 • Amigo Secreto
+      </span>
+    </header>
 
-      .card-presentes {
-        border-radius: 1rem;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-      }
+    <section class="card border-0 shadow-sm rounded-4 mb-4">
+      <div class="card-body p-4">
+        <p class="mb-0">
+          Olá! 👋 Esta é a lista de sugestões de presentes do
+          <strong>Nícolas</strong> para o amigo secreto de Natal 2026.
+          Fique à vontade para escolher o item que achar mais legal.
+          Os valores, quando informados, são apenas uma referência.
+        </p>
+      </div>
+    </section>
 
-      .badge-natal {
-        background: #c62828;
-      }
-
-      .table thead th {
-        background: #e3f2fd;
-      }
-
-      .table-hover tbody tr:hover {
-        background-color: #f1f8ff;
-      }
-
-      .valor {
-        white-space: nowrap;
-      }
-
-      .aviso-camisa {
-        border-left: 4px solid #dc3545;
-      }
-
-      footer {
-        font-size: 0.85rem;
-        color: #6c757d;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="text-center mb-4">
-            <h1 class="fw-bold">🎄 Amigo Secreto de Natal 2025</h1>
-            <p class="lead mb-1">
-              Lista de presentes do <strong>Nícolas</strong>
-            </p>
-            <span class="badge badge-natal text-light mt-2">
-              Natal 2025 • Amigo Secreto
-            </span>
-          </div>
-
-          <div class="card card-presentes">
-            <div class="card-body">
-              <p class="mb-3">
-                Olá! 👋<br />
-                Esta é a lista de sugestões de presentes do
-                <strong>Nícolas</strong> para o
-                <strong>amigo secreto de Natal 2025</strong>. Fique à vontade
-                para escolher o item que achar mais legal — os valores são
-                apenas uma referência.
+    <section aria-label="Sugestões de presentes">
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card gift-card">
+            <div class="product-image-wrap">
+              <img
+                class="product-image"
+                src="https://www.titan-ice.co.za/images/detailed/80/6941876247608_WS210-45760_01.jpg"
+                alt="Fone Bluetooth UGREEN HiTune S5 modelo 45760, preto, com estojo de carregamento"
+                loading="lazy"
+                onerror="this.onerror=null; this.src='https://placehold.co/600x400/f5f7f5/66736c?text=Imagem+indispon%C3%ADvel';"
+              />
+            </div>
+            <div class="card-body d-flex flex-column p-4">
+              <div class="small text-uppercase fw-semibold mb-2" style="color: var(--natal-vermelho)">
+                🎧 Áudio
+              </div>
+              <h2 class="h5 fw-bold">Fone Bluetooth UGREEN HiTune S5</h2>
+              <p class="product-description small">
+                Fone sem fio com design de clipe de orelha (open-ear),
+                Bluetooth 5.4, resistência à água IPX5 e até 24 horas
+                de autonomia total com o estojo de carregamento.
               </p>
-
-              <!-- Aviso importante sobre o tamanho da camiseta -->
-              <div class="alert alert-light aviso-camisa py-2 mb-4">
-                <strong class="text-danger">Observação importante:</strong>
-                <span class="text-danger">
-                  A coleta de valores foi feita em
-                  <strong>20/11/2025</strong> então os preços podem sofrer
-                  alterações.
-                </span>
-              </div>
-
-              <div class="table-responsive">
-                <table class="table table-hover align-middle mb-0">
-                  <thead>
-                    <tr>
-                      <th scope="col">Item</th>
-                      <th scope="col">Descrição / Link</th>
-                      <th scope="col" class="text-end">Valor aproximado (sem frete)</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>👕 Kit 4 camisetas PoloWear</td>
-                      <td>
-                        <a
-                          href="https://produto.mercadolivre.com.br/MLB-4099033385-kit-4-camisetas-masculinas-premium-polo-wear-sortido-_JM?searchVariation=188483766015#polycard_client=recommendations_vip-v2p&reco_backend=ranker_retrieval_online_vpp_v2p_rh&reco_model=coldstart_low_exposition&reco_client=vip-v2p&reco_item_pos=1&reco_backend_type=low_level&reco_id=896545f7-70a0-4cf1-b91c-c5f1859f5b4c"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Kit 4 Camisetas Masculinas Premium Polo Wear Sortido
-                        </a>
-                        <div class="small text-success mt-1">
-                          <strong>ML frete grátis.</strong>
-                        </div>
-                        <div class="small text-danger mt-1">
-                          Lembrar: escolher tamanho <strong>G</strong>.
-                        </div>
-                      </td>
-                      <td class="text-end valor text-success">R$ 150,00</td>
-                    </tr>
-                    <tr>
-                      <td>👕 Kit 5 camisetas Oversized</td>
-                      <td>
-                        <a
-                          href="https://shopee.com.br/product/626842970/20197315825?d_id=bf9b7&uls_trackid=5482fe2v0076&utm_content=3b6o5nkaiNsYmNTVDC71bedDDUbZ"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Kit 5 camisetas Oversized
-                        </a>
-                        <div class="small text-success mt-1">
-                          <strong>Shoppe frete grátis.</strong>
-                        </div>
-                        <div class="small text-danger mt-1">
-                          Lembrar: escolher tamanho <strong>M</strong>. (camisa
-                          Oversized é maior que a normal)
-                        </div>
-                      </td>
-                      <td class="text-end valor text-success">R$ 165,00</td>
-                    </tr>
-                    <tr>
-                      <td>🩳 Kit 3 Bermuda Masculina</td>
-                      <td>
-                        <a
-                          href="https://produto.mercadolivre.com.br/MLB-3896678839-kit-3-bermuda-masculina-importada-seda-secagem-rapida-_JM"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Kit 3 Bermuda Masculina Importada Seda Secagem Rápida
-                        </a>
-                        <div class="small text-success mt-1">
-                          <strong>ML frete grátis.</strong>
-                        </div>
-                      </td>
-                      <td class="text-end valor text-success">R$ 94,00</td>
-                    </tr>
-                    <tr>
-                      <td>🎲 Lista de boardgames</td>
-                      <td>
-                        <a
-                          href="https://www.comparajogos.com.br/u/Nicolas_Buscarini/list/desejos"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Lista de desejos do Nícolas no Compara Jogos
-                        </a>
-                        <div class="small text-muted">
-                          Qualquer jogo dessa lista é bem-vindo 🙂
-                        </div>
-                      </td>
-                      <td class="text-end valor text-success">~R$ 50,00 – R$ 250,00</td>
-                    </tr>
-                    <tr>
-                      <td>🎧 Fone de ouvido</td>
-                      <td>
-                        <a
-                          href="https://www.kabum.com.br/produto/119239/fone-de-ouvido-intra-auricular-jbl-tune-110-com-fio-microfone-conector-3-5mm-preto-jblt110blk"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Fone de Ouvido Intraauricular JBL Tune 110 (KaBuM)
-                        </a>
-                        <div class="small text-danger mt-1">
-                          <strong>Kabum frete R$13,00.</strong>
-                        </div>
-                      </td>
-                      <td class="text-end valor text-success">R$ 65,00</td>
-                    </tr>
-                    <tr>
-                      <td>🔌 Smart Plug Positivo</td>
-                      <td>
-                        <a
-                          href="https://www.amazon.com.br/Positivo-Casa-Inteligente-eletrodom%C3%A9sticos-Compat%C3%ADvel/dp/B07S14JHF2?adgrpid=1140194216729299&dib=eyJ2IjoiMSJ9.kqjYWd0psiTMnzorNkVxs-WVrb5ljqcZ7J2R_8up3hx4ZuuI3o_KTL2WfBuetEtkojDwGAadsD6kV8P91HJ--kd7Welc0T0KeES7SEgNFH8X_uGDoncArTsSMSXYcEiexQ9TtDjXcouTbgTMeVeVJ_2grflcX9dxIFvmZ0cByPMfla269u0yqmp3sKOcfu8ctwix5_kOue_Fn-PEHTFTTXaafuJ0I_JOf_3SsdmZhX-P62clolsfoQkiwleoZMb-WiL5HV8LpihFR1l-GbWWPs0q-QvFW_cFFFexVfIcDhY.zkDP-a8Szp9s4qtCEpRIwQZVA_bAKuFffmVxIclOtdc&dib_tag=se&hvadid=71262304253063&hvbmt=be&hvdev=c&hvlocphy=116068&hvnetw=o&hvqmt=e&hvtargid=kwd-71262654604352%3Aloc-20&hydadcr=5629_13210324&keywords=smart%2Bplug%2Bpositivo&mcid=0cf625819ebf3c58881f88d470bcaf2d&qid=1763637268&sr=8-5&th=1"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Smart Plug Wi-Fi 10A/1000W Positivo Casa Inteligente
-                        </a>
-                        <div class="small text-muted">
-                          Para ligar/desligar eletrodomésticos pelo celular
-                          (compatível com Alexa)
-                        </div>
-                        <div class="small text-success mt-1">
-                          <strong>Amazon frete grátis.</strong> Tentar pegar
-                          promoção de blackfriday
-                          <img
-                            src="amazonblackfriday.png"
-                            class="small text-muted ms-2"
-                          />
-                        </div>
-                      </td>
-                      <td class="text-end valor text-success">R$ 44,99</td>
-                    </tr>
-                    <tr>
-                      <td>🧴 Sabonete Líquido Esfoliante</td>
-                      <td>
-                        <a
-                          href="https://www.boticario.com.br/sabonete-liquido-esfoliante-cuidese-bem-show-de-banho-150ml/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Sabonete Líquido Esfoliante Cuide-se Bem
-                        </a>
-                        <div class="small text-danger mt-1">
-                            <strong>Boticario frete gratis a partir de R$179,00.</strong>
-                          </div>
-  
-                      </td>
-                      <td class="text-end valor text-success">R$ 44,90</td>
-                    </tr>
-                    <tr>
-                      <td>🧴 Loção Hidratante Desodorante Corporal Malbec</td>
-                      <td>
-                        <a
-                          href="https://www.boticario.com.br/locao-hidratante-desodorante-corporal-malbec-200ml-v2/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Loção Hidratante Desodorante Corporal Malbec
-                        </a>
-                        <div class="small text-danger mt-1">
-                          <strong>Boticario frete grátis a partir de R$179,00.</strong>
-                        </div>
-                      </td>
-                      <td class="text-end valor text-success">R$ 49,90</td>
-                    </tr>
-                    <tr>
-                      <td>🎮 FissionGrip Capa protetora para Nintendo Switch 2</td>
-                      <td>
-                        <a
-                          href="https://pt.aliexpress.com/item/1005010265509212.html?spm=a2g0o.productlist.main.1.770eCNesCNes6r&algo_pvid=e9b24a9a-59a6-4665-9f97-2a03d7e25575&algo_exp_id=e9b24a9a-59a6-4665-9f97-2a03d7e25575-0&pdp_ext_f=%7B%22order%22%3A%2265%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21BRL%21263.70%21136.76%21%21%21325.28%21168.70%21%402101ee6617636503935865914e9ab0%2112000051717382690%21sea%21BR%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3A63e65886%3Bm03_new_user%3A-29895%3BpisId%3A5000000187626966&curPageLogUid=ieoorJAvejVu&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005010265509212%7C_p_origin_prod%3A"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          FissionGrip Capa protetora para Nintendo Switch 2
-                        </a>
-                        <div class="small text-danger mt-1">
-                          <strong>R$136,76</strong> + R$61,06 em impostos estimados
-                        </div>
-                        <div class="small text-muted mt-1">
-                          Frete: R$20,36
-                        </div>
-                      </td>
-                      <td class="text-end valor text-success">R$ 218,18</td>
-                    </tr>
-                    <tr>
-                      <td>💻 Memória RAM DDR4 versão vermelha</td>
-                      <td>
-                        <a
-                          href="https://pt.aliexpress.com/item/1005008698446171.html?spm=a2g0o.productlist.main.14.6cc175f2Ky7h3x&algo_pvid=d65d40be-a454-4b5c-a97d-64f34c01bb13&algo_exp_id=d65d40be-a454-4b5c-a97d-64f34c01bb13-13&pdp_ext_f=%7B%22order%22%3A%2231%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21BRL%21122.38%21116.38%21%21%21150.96%21143.56%21%402101c44517636515728958108e1174%2112000046294266858%21sea%21BR%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3A63e65886%3Bm03_new_user%3A-29895%3BpisId%3A5000000187626968&curPageLogUid=t5PVFxMeUeRn&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005008698446171%7C_p_origin_prod%3A"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Memória RAM DDR4 versão vermelha
-                        </a>
-                        <div class="small text-danger mt-1">
-                          <strong>R$116,38</strong> + R$51,95 em impostos estimados
-                        </div>
-                        <div class="small text-muted mt-1">
-                          Frete: R$46,38
-                        </div>
-                      </td>
-                      <td class="text-end valor text-success">R$ 214,71</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="mt-auto">
+                <div class="fw-semibold mb-3">Preço: consultar na loja</div>
+                <a
+                  class="btn btn-store w-100"
+                  href="https://ugreendobrasil.com.br/produto/fone-bluetooth-ugreen-hitune-s5-semfio-anc-clipe-orelha-preto/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ver produto na loja
+                  <span aria-hidden="true">↗</span>
+                </a>
               </div>
             </div>
-            <div class="card-footer text-center">
-              <small class="text-muted"> 🎁✨ </small>
-            </div>
-          </div>
-
-          <footer class="text-center mt-4">
-            <p>
-              Página criada para o amigo secreto de Natal 2025 de
-              <strong>Nícolas</strong>.
-            </p>
-          </footer>
+          </article>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Bootstrap JS (opcional, só se precisar de componentes JS do Bootstrap) -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <footer class="text-center mt-5">
+      <p class="mb-1">🎁✨</p>
+      <p>Página criada para o amigo secreto de Natal 2026 de <strong>Nícolas</strong>.</p>
+    </footer>
+  </main>
+</body>
 </html>
